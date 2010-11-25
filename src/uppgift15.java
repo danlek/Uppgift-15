@@ -7,7 +7,7 @@ public class uppgift15
 	public static void main(String[] args) 
 	{
 		Scanner inkommande = new Scanner(System.in);
-		int tal, big, biggest, small, smallest, counter, sum, temp;
+		int tal, big, biggest, small, smallest, counter, sum;
 		counter = 0;
 		sum = 0;
 		big = 0;
