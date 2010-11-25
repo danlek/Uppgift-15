@@ -14,6 +14,7 @@ public class uppgift15
 		biggest = 0;
 		small = 0;
 		smallest = 0;
+		System.out.println("Denna program tar emot ett obegränsad antal heltal och håller koll,\npå störst, näst störst, minst och näst minsta talen. ");
 		do{
 			System.out.println("Skriv in ett heltal, avsluta med 0!");
 			tal = inkommande.nextInt();
@@ -29,15 +30,19 @@ public class uppgift15
 					if(tal > biggest)
 					{
 						smallest = biggest;
-						small = smallest;
+						//small = smallest;
+						big = smallest;
 						biggest = tal;
-						big = biggest;
+						//big = biggest;
+						small = biggest;
 					}
 					else
 					{
 						smallest = tal;
-						small = smallest;
-						big = biggest;
+						//small = smallest;
+						//big = biggest;
+						small = biggest;
+						big = smallest;
 					}
 				}
 				else if(counter == 2)//två värden
@@ -87,7 +92,7 @@ public class uppgift15
 					}
 					
 				}
-				counter++;
+				counter++; System.out.println("counter " + counter);
 				sum = sum + tal;
 			}
 
